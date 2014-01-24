@@ -24,7 +24,7 @@ public class Platformer2DUserControl : MonoBehaviour
 		// Read the inputs.
 
 		// Pass all parameters to the character control script.
-		character.Move( 1, false , jump );
+		character.Move( 2, false , jump );
 
         // Reset the jump input once it has been used.
 	    jump = false;

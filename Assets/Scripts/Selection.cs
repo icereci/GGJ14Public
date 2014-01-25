@@ -3,12 +3,6 @@ using System.Collections;
 
 public class Selection : MonoBehaviour {
 
-	void Update(){
-		if (Input.GetKeyDown("space")){
-			Application.LoadLevel(1);
-		}
-	
-}
 
 	public int a;
 	void OnMouseEnter(){

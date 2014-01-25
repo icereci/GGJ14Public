@@ -5,7 +5,7 @@ public class DestroyScript : MonoBehaviour {
 
 	void LoadNextLevel()
 	{
-		Application.LoadLevel(1);
+		Application.LoadLevel(4);
 	}
 
 	void OnTriggerEnter2D(Collider2D other){

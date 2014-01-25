@@ -15,8 +15,11 @@ public class Platformer2DUserControl : MonoBehaviour
     void Update ()
     {
         // Read the jump input in Update so button presses aren't missed.
-        if (Input.GetButtonDown("Jump"))
-            jump = true;
+        if (Input.GetButtonDown ("Jump")) 
+		{
+			jump = true;
+			audio.Play();
+		}
     }
 
 	void FixedUpdate()

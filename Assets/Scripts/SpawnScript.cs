@@ -14,6 +14,11 @@ public class SpawnScript : MonoBehaviour {
 
 	void Spawn () {
 		Instantiate(obj[Random.Range(0, obj.GetLength(0))], transform.position, Quaternion.identity);
-		Invoke ( "Spawn", Random.Range ( spawnMin, spawnMax ));
+//		if (obj [0].tag == "Bird") 
+//		{
+//			obj [0].rigidbody2D.AddForce(Vector2.right*0.2f);
+//			Debug.Log("Birdie");
+//		}
+			Invoke ( "Spawn", Random.Range ( spawnMin, spawnMax ));
 	}
 }

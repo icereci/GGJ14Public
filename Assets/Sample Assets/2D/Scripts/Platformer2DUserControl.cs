@@ -4,32 +4,29 @@
 public class Platformer2DUserControl : MonoBehaviour 
 {
 	private PlatformerCharacter2D character;
-    private bool jump;
-
-
+	private bool jump;
+	
+	
 	void Awake()
 	{
 		character = GetComponent<PlatformerCharacter2D>();
 	}
-
-    void Update ()
-    {
-        // Read the jump input in Update so button presses aren't missed.
-        if (Input.GetButtonDown ("Jump")) 
-		{
+	
+	void Update ()
+	{
+		// Read the jump input in Update so button presses aren't missed.
+		if (Input.GetButtonDown("Jump"))
 			jump = true;
-			audio.Play();
-		}
-    }
-
+	}
+	
 	void FixedUpdate()
 	{
 		// Read the inputs.
-
+		
 		// Pass all parameters to the character control script.
 		character.Move( 2, false , jump );
-
-        // Reset the jump input once it has been used.
-	    jump = false;
+		
+		// Reset the jump input once it has been used.
+		jump = false;
 	}
 }

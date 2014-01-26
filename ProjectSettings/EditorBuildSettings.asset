@@ -11,8 +11,10 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuScene.unity
   - enabled: 1
     path: Assets/Scenes/MeRun.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MePlatform.unity
+  - enabled: 1
+    path: Assets/Scenes/mePlat.unity
   - enabled: 1
     path: Assets/Scenes/GameOverRunner.unity
   - enabled: 1

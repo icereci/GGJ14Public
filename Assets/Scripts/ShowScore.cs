@@ -15,7 +15,7 @@ public class ShowScore : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		playerScore += Time.deltaTime ;
-		GetComponent<TextMesh>().text = "Score: "+ (int)(playerScore*100);
+		GetComponent<TextMesh>().text = "Score:"+ (int)(playerScore*100);
 	
 		
 	}

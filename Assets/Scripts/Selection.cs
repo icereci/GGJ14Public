@@ -15,6 +15,9 @@ public class Selection : MonoBehaviour {
 	}
 	
 	void OnMouseDown(){
+		if(a==0){
+			Application.LoadLevel(0);
+		}
 		
 		if(a==1){
 			Application.LoadLevel(3);
